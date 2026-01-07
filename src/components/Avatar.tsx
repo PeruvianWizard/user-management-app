@@ -44,7 +44,7 @@ export default function Avatar({ url, size = 150, onUpload }: Props) {
             setUploading(true);
 
             const result = await ImagePicker.launchImageLibraryAsync({
-                mediaTypes: ImagePicker.MediaTypeOptions.Images,
+                mediaTypes: ['images'],
                 allowsMultipleSelection: false,
                 allowsEditing: true,
                 quality: 1,
